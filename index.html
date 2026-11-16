@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#104828" />
+    <meta name="description" content="COETUS — Escola do Nazareno. Um espaço de estudo, pesquisa e diálogo nas humanidades." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='19' fill='%23104828'/%3E%3Ctext x='20' y='28' text-anchor='middle' font-family='Georgia' font-size='25' fill='%23f5f4ed'%3EC%3C/text%3E%3C/svg%3E" />
+    <title>COETUS — Escola do Nazareno</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="#" data-page="dashboard" aria-label="COETUS, início">
+          <span class="brand-mark" aria-hidden="true">C</span>
+          <span class="brand-name">COETUS<small>ESCOLA DO NAZARENO</small></span>
+        </a>
+        <div class="sidebar-label">ESPAÇO DE ESTUDO</div>
+        <nav class="primary-nav" aria-label="Navegação principal">
+          <button class="nav-link active" data-page="dashboard"><span class="nav-icon">⌂</span>Visão geral</button>
+          <button class="nav-link" data-page="courses"><span class="nav-icon">▤</span>Meus cursos</button>
+          <button class="nav-link" data-page="library"><span class="nav-icon">▥</span>Biblioteca</button>
+          <button class="nav-link" data-page="assessments"><span class="nav-icon">☷</span>Avaliações</button>
+          <button class="nav-link" data-page="certificates"><span class="nav-icon">◇</span>Certificados</button>
+        </nav>
+        <div class="sidebar-label management-label">GESTÃO</div>
+        <nav class="primary-nav" aria-label="Área administrativa">
+          <button class="nav-link" data-page="admin"><span class="nav-icon">▦</span>Administração</button>
+        </nav>
+        <div class="sidebar-note">
+          <span class="note-mark">✳</span>
+          <p>Conhecimento que atravessa épocas, ideias e culturas.</p>
+        </div>
+        <div class="sidebar-bottom">
+          <button class="nav-link login-link" data-page="login"><span class="nav-icon">↗</span>Entrar na plataforma</button>
+          <div class="sidebar-foot">UM INSTITUTO DE HUMANIDADES</div>
+        </div>
+      </aside>
+
+      <main class="main-area">
+        <header class="topbar">
+          <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+          <div class="breadcrumbs"><span>COETUS</span><span class="crumb-divider">/</span><span id="currentCrumb">Visão geral</span></div>
+          <div class="topbar-actions">
+            <label class="search-box">
+              <span aria-hidden="true">⌕</span>
+              <input id="globalSearch" type="search" placeholder="Buscar na plataforma" aria-label="Buscar na plataforma" />
+              <kbd>⌘ K</kbd>
+            </label>
+            <button class="icon-button notification-button" aria-label="Avisos" id="noticeButton">♧<i></i></button>
+            <button class="profile-button" id="profileButton" aria-label="Acessar conta"><span class="avatar">MA</span><span class="profile-copy">Marina Alves<small>Estudante</small></span><span class="chevron">⌄</span></button>
+          </div>
+        </header>
+        <div class="mobile-scrim" id="mobileScrim"></div>
+        <section class="page-content" id="view" aria-live="polite"></section>
+      </main>
+    </div>
+    <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
